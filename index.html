@@ -20,25 +20,27 @@
 
         <nav>
           <ul class="links">
-            <li><a href="#" class="menu-item">Sobre mim</a></li>
+            <li>
+              <a href="#about" class="menu-item">Sobre mim</a>
+            </li>
             <li><a href="#" class="menu-item">Link</a></li>
           </ul>
 
           <div>
-            <a href="#contact" class="btn-primary"
+            <a target="_blank" href="#contact" class="btn-primary"
               ><span>Peça um orçamento</span> 🌎</a
             >
           </div>
 
           <ul class="social">
             <li>
-              <a href="https://www.linkedin.com/in/jphn75179216"
+              <a target="_blank" href="https://www.linkedin.com/in/jphn75179216"
                 ><img src="./assets/img/icon-linkedin.svg" alt="linkedin"
               /></a>
             </li>
 
             <li>
-              <a href="https://www.github.com/Jphn"
+              <a target="_blank" href="https://www.github.com/Jphn"
                 ><img src="./assets/img/icon-github.svg" alt="github"
               /></a>
             </li>
@@ -48,7 +50,7 @@
     </header>
 
     <main>
-      <section class="hero">
+      <section id="hero" class="hero">
         <div class="container">
           <div class="title">
             <h1>Olá!👋 Sou o <br /><span>João Pedro</span></h1>
@@ -63,15 +65,18 @@
             <img src="./assets/img/javascript.svg" alt="javascript" />
             <img src="./assets/img/css.svg" alt="css" />
             <img src="./assets/img/html.svg" alt="html" />
+            <img src="./assets/img/php.svg" width="64" height="64" alt="php" />
           </div>
 
           <div class="arrow">
-            <img src="./assets/img/arrow.svg" alt="arrow" />
+            <a href="#about"
+              ><img src="./assets/img/arrow.svg" alt="arrow"
+            /></a>
           </div>
         </div>
       </section>
 
-      <section class="cards">
+      <section id="cards" class="cards">
         <div class="container">
           <div class="header">
             <div class="topline">
@@ -84,33 +89,38 @@
         </div>
       </section>
 
-      <section class="about">
+      <section id="about" class="about">
         <div class="container">
-          <div class="title">
-            <h2>Sobre Mim</h2>
+          <div class="left">
+            <h2>Sobre Mim<span>.</span></h2>
+
+            <p>
+              Comecei a programar em 2018 ainda no ensino médio. A primeira
+              linguagem que estudei foi Python, mas não fui tão a fundo. Algum
+              tempo depois, estudei PHP e desenvolvi projetos com o mesmo. Desde
+              então, tenho trabalhado principalmente com VueJS no front-end e
+              NodeJS no back-end. Mas planejo substituir o NodeJS pelo PHP, que
+              mais me agrada quanto a viabilidade para desenvolver.
+            </p>
+
+            <div class="social">
+              <a target="_blank" href="https://www.instagram.com/jopee_l"
+                ><img src="./assets/img/icon-instagram.svg" alt="instagram"
+              /></a>
+
+              <a target="_blank" href="https://www.linkedin.com/in/jphn75179216"
+                ><img src="./assets/img/icon-linkedin.svg" alt="linkedin"
+              /></a>
+            </div>
           </div>
-          <div class="text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vel
-            posuere enim. Quisque cursus ac leo et maximus. Proin non diam
-            congue, sodales velit et, cursus ante. Suspendisse convallis rhoncus
-            dapibus. Vivamus accumsan leo id blandit ultrices. Fusce libero
-            ligula, ullamcorper quis facilisis sed, commodo nec lacus.
-          </div>
-          <div class="social">
-            <a href="https://www.instagram.com/jopee_l"
-              ><img src="" alt="instagram"
-            /></a>
-            <a href="https://www.linkedin.com/in/jphn75179216"
-              ><img src="" alt="linkedin"
-            /></a>
-          </div>
+
           <div class="picture">
             <img src="./assets/img/profile.jpg" alt="foto" />
           </div>
         </div>
       </section>
 
-      <section class="cases">
+      <section id="cases" class="cases">
         <div class="container">
           <div class="title">
             <h2>Cases<span>.</span></h2>
@@ -124,26 +134,45 @@
         </div>
       </section>
 
-      <section class="contact">
+      <section id="contact" class="contact">
         <div class="container">
           <div class="title">
-            <h2>Entre em contato<span>.</span></h2>
+            <h2>
+              Entre em <br />
+              contato<span>.</span>
+            </h2>
+
+            <span class="tag">#vamoNessa🚀</span>
           </div>
 
-          <div class="form">
-            <form action="" method="post">
-              <input type="text" name="name" placeholder="Preencha seu nome" />
+          <form action="" method="post">
+            <div class="inputs">
+              <input
+                type="text"
+                name="name"
+                placeholder="Preencha seu nome"
+                required
+              />
+
               <input
                 type="email"
                 name="email"
                 placeholder="Email para contato"
+                required
               />
+
               <textarea
                 name="message"
                 placeholder="Digite sua mensagem"
+                rows="6"
+                required
               ></textarea>
-            </form>
-          </div>
+            </div>
+
+            <div class="submit">
+              <button type="submit">Enviar</button>
+            </div>
+          </form>
         </div>
       </section>
     </main>
@@ -151,20 +180,33 @@
     <footer>
       <div class="container">
         <div class="social">
-          <a href="https://www.github.com/Jphn"
+          <a target="_blank" href="https://www.github.com/Jphn"
             ><img src="./assets/img/icon-github.svg" alt="github"
           /></a>
-          <a href="https://www.linkedin.com/in/jphn75179216"
+
+          <a target="_blank" href="https://www.linkedin.com/in/jphn75179216"
             ><img src="./assets/img/icon-linkedin.svg" alt="linkedin"
           /></a>
-          <a href="https://www."><img src="./assets/img/" alt="whatsapp" /></a>
-          <a href="https://www."><img src="./assets/img/" alt="telegram" /></a>
-          <a href="mailto:joaopedroholandaneves@gmail.com"
-            ><img src="./assets/img/" alt="gmail"
+
+          <a
+            target="_blank"
+            href="https://api.whatsapp.com/send?phone=5588936187216&text=Ol%C3%A1%20Jo%C3%A3o!%20Tenho%20uma%20ideia,%20vamos%20conversar..."
+            ><img src="./assets/img/icon-whatsapp.svg" alt="whatsapp"
+          /></a>
+
+          <a target="_blank" href="https://www."
+            ><img src="./assets/img/icon-telegram.svg" alt="telegram"
+          /></a>
+
+          <a target="_blank" href="mailto:joaopedroholandaneves@gmail.com"
+            ><img src="./assets/img/icon-email.svg" alt="gmail"
           /></a>
         </div>
 
-        <div>Copyright &copy;2022. Feito por mim.</div>
+        <p>
+          Copyright &copy; 2022. Feito por mim. <br />
+          Valeu <span>Luan</span>!
+        </p>
       </div>
     </footer>
   </body>
