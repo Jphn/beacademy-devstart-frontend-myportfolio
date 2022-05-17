@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="shortcut icon"
-      href="./assets/img/favicon.png"
+      href="./assets/img/dna-svgrepo-com.svg"
       type="image/x-icon"
     />
 
@@ -15,13 +15,14 @@
     <link rel="stylesheet" href="./assets/css/pattern.css" />
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
   </head>
 
   <body>
     <header>
       <div class="container">
         <div class="logo">
-          <img src="./assets/img/be-logo.svg" alt="beAcademy" />
+          <img src="./assets/img/dna-svgrepo-com.svg" width="80" alt="devNa" />
         </div>
 
         <nav>
@@ -55,6 +56,11 @@
 
     <main>
       <section id="hero" class="hero">
+        <div class="background">
+          <video id="video" autoplay muted loop>
+            <source src="./assets/video/bg-video.mp4" type="video/mp4" />
+          </video>
+        </div>
         <div class="container">
           <div class="title">
             <h1>Olá!👋 Sou o <br /><span>João Pedro</span></h1>
@@ -65,15 +71,54 @@
             </p>
           </div>
 
-          <div class="shields">
-            <img src="./assets/img/javascript.svg" alt="javascript" />
-            <img src="./assets/img/css.svg" alt="css" />
-            <img src="./assets/img/html.svg" alt="html" />
-            <img src="./assets/img/php.svg" width="64" height="64" alt="php" />
-          </div>
+          <ul class="shields">
+            <li>
+              <img
+                src="./assets/img/javascript.svg"
+                width="64"
+                height="64"
+                alt="javascript"
+              />
+            </li>
+            <li>
+              <img
+                src="./assets/img/css.svg"
+                width="64"
+                height="64"
+                alt="css"
+              />
+            </li>
+            <li>
+              <img
+                src="./assets/img/html.svg"
+                width="64"
+                height="64"
+                alt="html"
+              />
+            </li>
+            <li>
+              <img
+                src="./assets/img/php.svg"
+                width="64"
+                height="64"
+                alt="php"
+              />
+            </li>
+            <li>
+              <img
+                src="./assets/img/vuejs-logo.svg"
+                width="64"
+                height="64"
+                alt="vuejs"
+              />
+            </li>
+          </ul>
 
           <a class="arrow" href="#cards"
-            ><img src="./assets/img/arrow.svg" alt="arrow"
+            ><img
+              src="./assets/img/double-up-arrow-svgrepo-com.svg"
+              alt="arrow"
+              width="50"
           /></a>
         </div>
       </section>
@@ -134,14 +179,30 @@
           <div class="left">
             <h2>Sobre Mim<span>.</span></h2>
 
-            <p>
-              Comecei a programar em 2018 ainda no ensino médio. A primeira
-              linguagem que estudei foi Python, mas não fui tão a fundo. Algum
-              tempo depois, estudei PHP e desenvolvi projetos com o mesmo. Desde
-              então, tenho trabalhado principalmente com VueJS no front-end e
-              NodeJS no back-end. Mas planejo substituir o NodeJS pelo PHP, que
-              mais me agrada quanto a viabilidade para desenvolver.
-            </p>
+            <ul>
+              <li>
+                <p>
+                  Comecei a programar em 2018, ainda no ensino médio. A primeira
+                  linguagem que estudei foi <span>Python</span>, foi ela que me
+                  apresentou o mundo das linhas de código.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  Algum tempo depois, estudei <span>PHP</span> e desenvolvi
+                  projetos com o mesmo. Desde então, tenho trabalhado
+                  principalmente com <span>VueJS</span> no front-end e
+                  <span>NodeJS</span> no back-end.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Mas planejo voltar ao <span>PHP</span>, que mais me agrada
+                  quanto a viabilidade para desenvolver.
+                </p>
+              </li>
+            </ul>
 
             <div class="social">
               <a target="_blank" href="https://www.instagram.com/jopee_l"
@@ -154,7 +215,7 @@
             </div>
           </div>
 
-          <div class="picture">
+          <div class="right">
             <img src="./assets/img/profile.jpg" alt="foto" />
           </div>
         </div>
@@ -251,7 +312,10 @@
 
         <p>
           Copyright &copy; 2022. Feito por mim. <br />
-          Valeu <span>Luan</span>!
+          Baseado no template do
+          <a href="https://github.com/lnmont" target="_blank"
+            ><span>@lnmont</span></a
+          >!
         </p>
       </div>
     </footer>
