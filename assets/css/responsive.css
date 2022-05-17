@@ -1,13 +1,152 @@
+@media screen and (min-width: 1260px) {
+	section.cases .container .images .case img:hover {
+		transform: translateY(-3%);
+		filter: brightness(100%);
+	}
+}
+
 @media screen and (max-width: 1260px) {
+	section.cards .container {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	section.cards .container .title {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	section.cards .container .title h2 {
+		text-align: center;
+	}
+
+	section.cards .container .title h2 br {
+		display: none;
+	}
 }
 
 @media screen and (max-width: 1133px) {
+	section.about .container {
+		flex-direction: column;
+		gap: 3.2rem;
+	}
+
+	section.about .container .left {
+		align-items: center;
+	}
+
+	section.about .container .left h2 {
+		text-align: center;
+	}
+
+	section.about .container .left ul li p {
+		text-align: center;
+	}
 }
 
 @media screen and (max-width: 950px) {
+	section.cases .container {
+		align-items: center;
+	}
+
+	section.cases .container .images {
+		flex-direction: column;
+	}
+
+	section.contact .container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 2rem;
+	}
+
+	section.contact .container .title {
+		align-items: center;
+	}
+
+	section.contact .container .title h2 br {
+		display: none;
+	}
+
+	section.contact .container .title h2 {
+		text-align: center;
+	}
+
+	section.contact .container form {
+		align-items: center;
+	}
 }
 
 @media screen and (max-width: 900px) {
+	.clipped {
+		overflow: hidden;
+	}
+
+	header .container {
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	header .container i.btn-toggle.open {
+		background-image: url('../img/menu-right-svgrepo-com.svg');
+		display: block;
+		width: 7rem;
+		height: 7rem;
+	}
+
+	header .container nav {
+		opacity: 0;
+		visibility: hidden;
+		background-color: var(--black-color);
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 6rem;
+		transition: 300ms;
+	}
+
+	header .container nav.show {
+		z-index: 2;
+		opacity: 1;
+		visibility: visible;
+	}
+
+	header .container nav .links {
+		flex-direction: column;
+	}
+
+	header .container nav .links li a {
+		font-size: 2.7rem;
+	}
+
+	header .container nav a.btn-primary {
+		font-size: 2.2rem;
+	}
+
+	header .container nav .social li a img {
+		width: 3.6rem;
+	}
+
+	header .container nav i.btn-toggle.close {
+		background-image: url('../img/x-symbol-svgrepo-com.svg');
+		position: absolute;
+		top: 4rem;
+		right: 4rem;
+		display: block;
+	}
+
+	section.cards .container .cards {
+		flex-wrap: wrap;
+	}
 }
 
 @media screen and (max-width: 768px) {
@@ -21,3 +160,24 @@
 		font-size: 50.2%;
 	}
 }
+
+/* #region Height*/
+
+@media screen and (max-height: 650px) {
+	html {
+		font-size: 50.2%;
+	}
+
+	section.hero .container {
+		position: relative;
+		height: 150vh;
+
+		background-color: var(--semi-black);
+	}
+
+	section.hero .background {
+		display: none;
+	}
+}
+
+/* #region */

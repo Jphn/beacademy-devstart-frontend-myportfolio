@@ -3,6 +3,7 @@ header {
 	position: absolute;
 	top: 0;
 	left: 0;
+	right: 0;
 	width: 100%;
 	padding: 4rem 0px;
 	z-index: 1;
@@ -18,25 +19,21 @@ header .container nav {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	gap: 4.4rem;
 }
 
 header .container nav .links {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-}
-
-header .container nav .links li {
-	margin-right: 4.8rem;
+	gap: 3.2rem;
 }
 
 header .container nav .social {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-
-	gap: 3.4rem;
-	margin-left: 4rem;
+	gap: 3.2rem;
 }
 
 header .container nav .social a img {
@@ -51,10 +48,6 @@ header .container nav .social a img:hover {
 /* * MAIN */
 
 /* ! #HERO */
-section.hero {
-	height: 100vh;
-}
-
 section.hero .background {
 	position: absolute;
 	top: 0;
@@ -72,13 +65,14 @@ section.hero .background #video {
 }
 
 section.hero .container {
+	/* position: relative; */
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	gap: 2rem;
 
-	height: 100%;
+	height: 100vh;
 }
 
 section.hero .container .title {
@@ -88,16 +82,14 @@ section.hero .container .title {
 	justify-content: center;
 	text-align: center;
 	max-width: 59.2rem;
-	/* margin-top: 24rem; */
 }
 
 section.hero .container .title h1 {
 	color: var(--white-color);
 
-	font-family: "Inter", "Poppins";
+	font-family: 'Inter', 'Poppins';
 	font-weight: 700;
 	font-size: 6.4rem;
-	/* line-height: 7.7rem; */
 }
 
 section.hero .container .title h1 span {
@@ -109,9 +101,6 @@ section.hero .container .title h2 {
 	color: var(--white-color);
 	font-size: 2.5rem;
 	text-align: center;
-
-	/* margin-top: 2.6rem; */
-	/* line-height: 3.6rem; */
 }
 
 section.hero .container .title p {
@@ -120,9 +109,6 @@ section.hero .container .title p {
 	text-align: center;
 
 	color: var(--second-color);
-
-	/* margin-top: 2.6rem; */
-	/* line-height: 2.7rem; */
 }
 
 section.hero .container .shields {
@@ -130,12 +116,9 @@ section.hero .container .shields {
 	align-items: center;
 	justify-content: space-between;
 	gap: 1rem;
-
-	/* margin-top: 2.3rem; */
 }
 
 section.hero .container .arrow {
-	margin: 3rem 0;
 	transition: all 300ms;
 	position: absolute;
 	bottom: 0;
@@ -169,27 +152,28 @@ section.cards .container {
 }
 
 section.cards .container .tilte h2 span {
-	font-family: "Inter", sans-serif;
+	font-family: 'Inter', sans-serif;
 }
 
 section.cards .container .cards {
 	display: flex;
-}
-
-section.cards .container .cards .title {
-	margin: 5rem 0;
-	padding: 0 14.5rem 0 1.4rem;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
 }
 
 section.cards .container .cards .card {
-	width: 100%;
-	max-width: 27.9rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+
+	width: 27.9rem;
 	height: 30.4rem;
 	background-color: var(--white-color);
 	border-radius: 4px;
-	margin-right: 3.3rem;
 	cursor: pointer;
-	filter: brightness(92%);
+	filter: brightness(96%);
 	transition: all 0.2s;
 }
 
@@ -203,23 +187,17 @@ section.cards .container .cards .card.active {
 }
 
 section.cards .container .cards .title h3 {
-	font-family: "Inter";
+	font-family: 'Inter';
 	font-weight: 300;
 	font-size: 6.4rem;
-	line-height: 7.7rem;
-	margin-bottom: 5.5rem;
-}
-
-section.cards .container .cards .info {
-	padding-left: 1.4rem;
 }
 
 section.cards .container .cards .info p {
-	font-family: "Inter";
+	font-family: 'Inter';
 	font-weight: 300;
 	font-size: 2.8rem;
-	line-height: 3.9rem;
 	text-transform: capitalize;
+	text-align: center;
 }
 
 /* ! #ABOUT */
@@ -254,7 +232,6 @@ section.about .container .left ul {
 section.about .container .left ul li p {
 	font-weight: 300;
 	font-size: 1.6rem;
-	/* margin-top: 2.4rem; */
 }
 
 section.about .container .left ul li p span {
@@ -264,7 +241,6 @@ section.about .container .left ul li p span {
 section.about .container .left .social {
 	display: flex;
 	gap: 1.6rem;
-	/* margin-top: 3.2rem; */
 }
 
 section.about .container .left .social a img {
@@ -291,6 +267,7 @@ section.cases {
 section.cases .container {
 	display: flex;
 	flex-direction: column;
+	gap: 1.4rem;
 }
 
 section.cases .container .images {
@@ -301,10 +278,6 @@ section.cases .container .images {
 	gap: 1.2rem;
 }
 
-section.cases .container .images .case:nth-child(2) {
-	margin-top: -1.2rem;
-}
-
 section.cases .container .images .case img {
 	border-radius: 0.7rem;
 
@@ -312,11 +285,6 @@ section.cases .container .images .case img {
 
 	cursor: pointer;
 	transition: all 300ms;
-}
-
-section.cases .container .images .case img:hover {
-	transform: translateY(-3%);
-	filter: brightness(100%);
 }
 
 /* ! #CONTACT */
@@ -330,39 +298,42 @@ section.contact .container {
 	align-items: flex-start;
 }
 
-section.contact .container .title h2 {
-	margin-bottom: 2.2rem;
+section.contact .container .title {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 1.4rem;
 }
 
 section.contact .container form {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
 	width: 100%;
 	max-width: 48.6rem;
+	gap: 1.5rem;
 }
 
-section.contact .container form .submit {
-	width: 100%;
+section.contact .container .inputs {
 	display: flex;
-	justify-content: flex-end;
+	flex-direction: column;
+	gap: 1.3rem;
+	width: 100%;
 }
 
-section.contact .container form .submit button[type="submit"] {
+section.contact .container form button[type='submit'] {
 	border-radius: 2.4rem;
 	background-color: var(--primary-color);
 	padding: 1rem 2.4rem;
 	border: none;
-	margin-top: 1.6rem;
 	font-weight: 700;
 	font-size: 1.7rem;
 
 	transition: all 0.4s;
 }
 
-section.contact .container form .submit button[type="submit"]:hover {
+section.contact .container form button[type='submit']:hover {
 	transform: scale(1.06);
-}
-
-section.contact .container .inputs input {
-	margin-bottom: 3.1rem;
 }
 
 /* * FOOTER */
