@@ -4,13 +4,13 @@
 
 ## Paleta de cores
 
-| Cor         | Hexadecimal                                                     |
-| ----------- | --------------------------------------------------------------- |
-| Primária    | ![00ADB5](https://via.placeholder.com/10/00ADB5f?text=+) 00ADB5 |
-| Secundária  | ![007c82](https://via.placeholder.com/10/007c82?text=+) 007c82  |
-| Branco      | ![EEEEEE](https://via.placeholder.com/10/EEEEEE?text=+) EEEEEE  |
-| Preto Médio | ![393E46](https://via.placeholder.com/10/393E46?text=+) 393E46  |
-| Preto       | ![222831](https://via.placeholder.com/10/222831?text=+) 222831  |
+| Cor         | Hexadecimal                                                           |
+| ----------- | --------------------------------------------------------------------- |
+| Primária    | ![00ADB5](https://via.placeholder.com/15/f03c15/000000?text=+) 00ADB5 |
+| Secundária  | ![007c82](https://via.placeholder.com/15/f03c15/000000?text=+) 007c82 |
+| Branco      | ![EEEEEE](https://via.placeholder.com/15/f03c15/000000?text=+) EEEEEE |
+| Preto Médio | ![393E46](https://via.placeholder.com/15/f03c15/000000?text=+) 393E46 |
+| Preto       | ![222831](https://via.placeholder.com/15/f03c15/000000?text=+) 222831 |
 
 ## Autor
 
